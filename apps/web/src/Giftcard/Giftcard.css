@@ -1,0 +1,21 @@
+.gift-bg {
+  background: var(--exa-bg-primary);
+}
+
+.gift-shell {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-panel);
+}
+
+.gift-card {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-panel);
+}
+
+.gift-input-wrap {
+  border: 1px solid var(--exa-border);
+  background: var(--exa-surface-elevated);
+  box-shadow: var(--exa-shadow-panel);
+}

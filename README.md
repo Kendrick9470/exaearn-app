@@ -14,14 +14,16 @@ Close the utility gap in Web3 by connecting blockchain technology to real-world 
 
 ## Technology Stack
 ### Frontend
-- React
-- TypeScript (planned for core logic)
+- `apps/website` - React/Vite marketing website
+- `apps/web` - React/Vite user dashboard
+- `apps/admin` - React/Vite admin console
+- TypeScript-ready shared configuration
 - Tailwind CSS
-- Vite
 - Axios or Fetch for API communication
 
 ### Backend
-- Laravel Transaction Service
+- `backend/api-gateway` Laravel Transaction Service
+- `backend/services/*` domain services
 - PHP 8.2+
 - REST API
 - Laravel Jobs + Redis queues
@@ -63,6 +65,12 @@ The Transaction Engine is the financial heart of ExaEarn. Every financial action
 
 Each transaction has a globally unique `transaction_id`.
 
+### Frontend Capabilities
+- React application shell and routing
+- Tailwind CSS styling
+- Axios or Fetch API communication
+- Zustand and context-driven state where needed
+
 ## Transaction Flow Examples
 ### User Deposit
 External exchange
@@ -89,6 +97,13 @@ User A sends EXA to User B
 - Node.js signs transaction
 - Broadcast to blockchain
 - Update transaction status
+
+### Blockchain And Web3
+- Solidity smart contracts on EVM networks
+- Hardhat contract development and tests
+- Ethers.js and Web3.js blockchain interaction
+- XRP Ledger SDK integration
+- Wallet connection support
 
 ## Database Design (PostgreSQL)
 ### transactions
@@ -208,16 +223,20 @@ Suggested flow:
 
 ## Local Development
 Backend:
-- `cd exaearn-backend`
+- `cd backend/api-gateway`
 - `composer install`
 - `php artisan migrate`
 - `php artisan serve`
 - `php artisan queue:listen`
 
-Frontend:
-- `cd exaearn-frontend`
-- `npm install`
-- `npm run dev`
+Frontend monorepo:
+- `pnpm install`
+- `pnpm web:dev`
+- `pnpm admin:dev`
+- `pnpm website:dev`
+
+Direct app fallback:
+- `pnpm --filter @exaearn/web dev`
 
 ## Roadmap 2026
 ### Q1

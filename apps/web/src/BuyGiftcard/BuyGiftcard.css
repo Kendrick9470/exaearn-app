@@ -1,0 +1,21 @@
+.buy-bg {
+  background: var(--exa-bg-primary);
+}
+
+.buy-shell {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-panel);
+}
+
+.buy-card {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-panel);
+}
+
+.buy-input-wrap {
+  border: 1px solid var(--exa-border);
+  background: var(--exa-surface-elevated);
+  box-shadow: var(--exa-shadow-panel);
+}

@@ -98,15 +98,24 @@ bootstrap/cache/*.php
 **/.postgres-data/
 
 # Local tool caches
+.expo/
+.pnpm-store/
 .publish/
+.embedded-git-backups/
 .composer-cache/
 .composer-home/
 .npm-cache/
 **/.npm-cache/
 php.ini
+**/php.ini
 php_modules.txt
 phpunit_out.txt
 patch.txt
+output.txt
+test_output.txt
+**/output.txt
+**/test_output.txt
+*.dll
 backend-*.log
 frontend-*.log
 
@@ -196,3 +205,16 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 /generated/prisma
+.vercel
+# Local browser/dev artifacts
+.edge-shot-profile/
+.postgres/
+.vercel-cli/
+.vercel-configs/
+apps/mobile/dist-web/
+tmp/
+website-*.png
+*.backup.jsx
+.npmrc
+package-lock.json
+apps/mobile/serve-dist-web.cjs

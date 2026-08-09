@@ -1,0 +1,46 @@
+.token-bg {
+  background: var(--exa-bg-primary);
+}
+
+.token-shell {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-panel);
+}
+
+.token-card {
+  background: var(--exa-surface);
+  border: 1px solid var(--exa-border);
+  box-shadow: var(--exa-shadow-soft);
+}
+
+.token-metallic {
+  background: linear-gradient(180deg, var(--exa-gold-light) 0%, var(--exa-gold) 48%, var(--exa-gold-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-left: 0.15em;
+}
+
+.token-coin {
+  background: radial-gradient(circle at 35% 22%, color-mix(in srgb, var(--exa-gold-light) 62%, transparent), transparent 34%),
+    linear-gradient(160deg, color-mix(in srgb, var(--exa-gold) 30%, transparent), color-mix(in srgb, var(--exa-surface-elevated) 82%, transparent));
+}
+
+.token-logo {
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--exa-gold) 38%, transparent));
+}
+
+.token-roadmap-btn,
+.token-community-cta {
+  box-shadow: var(--exa-shadow-gold);
+}
+
+.token-social-btn {
+  box-shadow: var(--exa-shadow-soft);
+}
+
+.allocation-fill {
+  box-shadow: var(--exa-shadow-gold);
+  transition: width 300ms ease;
+}
